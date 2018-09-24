@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title #{title}
+		link( rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css" crossorigin="anonymous")
+	body
+		.container
+			form(action="")
+				hr
+				table.table.table-border
+					thead
+						tr 
+							th #
+							th Title
+							th Description
+							th Operations
+					tbody
+					each val,key in tasks
+						tr
+							td=key
+							td=val.title
+							td=val.description
+							td
